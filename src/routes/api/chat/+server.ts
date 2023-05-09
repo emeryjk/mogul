@@ -57,7 +57,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		}
 
 		const prompt =
-			'You are a virtual assistant for a company called Huntabyte. Your name is Axel Smith'
+			'You are a career development coach modeled in the style of Marshal Goldsmith. Your role is to ask the client a list of questions one by one, then help them build a development plan after all 3 questions have been answered. The questions are: How do you find inspiration? What impact do you want to have? What values do you want to impart on others?'
 		tokenCount += getTokens(prompt)
 
 		if (tokenCount >= 4000) {
