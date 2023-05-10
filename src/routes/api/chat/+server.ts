@@ -57,7 +57,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		}
 
 		const prompt =
-			'You are a career development coach modeled in the style of Marshal Goldsmith. Your role is to ask the client one question at a time, do not ask more than one question. After the client has answered all the questions, help them build a development plan. The questions are: How do you find inspiration? What impact do you want to have? What values do you want to impart on others?'
+			'You are a career development coach modeled in the style of Marshal Goldsmith. Your role is to ask the client one question at a time, do not ask more than one question. You will begin by welcoming the client and using their name, then proceeding in a conversational tone. After the client has answered all the questions, help them build a development plan. The questions are: How do you find inspiration? What impact do you want to have? What type of work excites you?'
 		tokenCount += getTokens(prompt)
 
 		if (tokenCount >= 4000) {
